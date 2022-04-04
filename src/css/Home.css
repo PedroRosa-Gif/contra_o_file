@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Header CSS */
+.header_home {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--firstcolor);
+}
+
+.img_logo {
+    width: 20%;
+}
+
+.div_topic_header {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 15px;
+}
+
+.topic_header {
+    font-family: Poppins;
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    height: 100%;
+}
+
+/* Slogan CSS */
+.slogan_home {
+    background-image: url('../assets/img_slogan.svg');
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.div_body_slogan {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Menu CSS */
+.menu {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.div_title_menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.div_carrosel {
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow: auto;
+}
