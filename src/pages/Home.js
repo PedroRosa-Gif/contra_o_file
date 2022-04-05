@@ -1,5 +1,5 @@
 /* eslint-disable no-restricted-globals */
-import React, { useState } from 'react';
+import React from 'react';
 import Logo from '../assets/logo.svg';
 import Cow from '../assets/cow.svg';
 import Twitter from '../assets/twitter_logo.svg';
@@ -20,9 +20,7 @@ import PhoneIcon from '../assets/phone_icon.svg';
 import '../css/Home.css';
 
 function Home() {
-    const [email, setEmail] = useState('');
-    const [phoneNumber, setPhoneNumber] = useState('');
-    const [plates, setPlates] = useState([
+    const plates = [
         {
             name: 'Prato 1',
             price: 22,
@@ -53,7 +51,7 @@ function Home() {
             avaliation: 5,
             photo: Plate5,
         },
-    ]);
+    ];
 
     return (
         <div className='Home'>
@@ -130,11 +128,11 @@ function Home() {
                     </div>
                     <div className='div_field_form'>
                         <img src={EmailIcon} alt='Icone de um email' className='icon_form' />
-                        <input type='text' className='field_form_contact' onChange={(e) => setEmail(e.target.value)} placeholder='Email' />
+                        <input type='text' className='field_form_contact'  placeholder='Email' />
                     </div>
                     <div className='div_field_form'>
                         <img src={PhoneIcon} alt='Icone de um telefone' className='icon_form' />
-                        <input type='text' className='field_form_contact' onChange={(e) => setPhoneNumber(e.target.value)} placeholder='Telefone' />
+                        <input type='text' className='field_form_contact' placeholder='Telefone' />
                     </div>
                     <div className='div_textarea'>
                         <label htmlFor='text_questions'>Mande suas dúvidas</label>
