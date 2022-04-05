@@ -1,11 +1,13 @@
 .MenuComponent {
     width: 270px;
-    height: auto;
+    height: 75%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     background-color: var(--secondcolor);
     margin: 20px;
+    align-self: center;
+    border-radius: 10px;
 }
 
 .div_image_menu {
@@ -19,35 +21,32 @@
 
 .div_info_menu, .div_avaliation_menu {
     width: 100%;
-    height: 30px;
+    height: 40%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     padding: 7px;
+    padding-right: 4px;
+}
+
+.div_info_menu {
+    height: 15%;
 }
 
 .txt_info_menu {
-    height: 30px;
-    font-family: Inter;
-    font-size: 28px;
+    font-family: Lato;
+    font-size: 21px;
+    align-self: center;
 }
 
 .div_align_menu {
     width: 100%;
+    height: 25%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.div_btn_menu {
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.btn_menu {
-    background-color: #EA9B58;
-    width: 80%;
-    height: auto;
+.btn_menu:hover {
+    background-color: #d67a28;
 }

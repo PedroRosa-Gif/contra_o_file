@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -6,7 +8,7 @@
 /* Header CSS */
 .header_home {
     width: 100%;
-    height: 20vh;
+    height: 15vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -18,7 +20,7 @@
 }
 
 .div_topic_header {
-    width: 60%;
+    width: 50%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -26,11 +28,11 @@
 }
 
 .topic_header {
-    font-family: Poppins;
-    font-size: 32px;
+    font-family: Lato;
+    font-size: 25px;
     color: white;
     text-decoration: none;
-    height: 100%;
+    align-self: center;
 }
 
 /* Slogan CSS */
@@ -52,14 +54,29 @@
     text-align: center;
 }
 
+.div_body_slogan h1 {
+    font-family: 'Pacifico', cursive;
+    color: white;
+    font-size: 70px;
+    font-weight: 100;
+}
+
+.div_body_slogan h5 {
+    font-family: Lato;
+    color: white;
+    font-size: 23px;
+    font-weight: 200;
+}
+
 /* Menu CSS */
 .menu {
     width: 100%;
-    height: 70vh;
+    height: 110vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
+    padding-top: 30px;
 }
 
 .div_title_menu {
@@ -69,11 +86,352 @@
     justify-content: center;
 }
 
+.div_title_menu h1 {
+    font-family: Lato;
+    font-size: 33px;
+    font-style: bold;
+    font-weight: 800;
+}
+
 .div_carrosel {
     width: 100%;
-    height: 55vh;
+    height: 90%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    overflow: auto;
+    overflow-x: auto;
+}
+
+.div_btn_call {
+    width: 100%;
+    height: 20%;
+}
+
+.btn_menu {
+    background-color: #EA9B58;
+    width: 196px;
+    height: 60px;
+    border-radius: 22px;
+    cursor: pointer;
+    margin: 10px;
+    font-family: Lato;
+    font-size: 20px;
+}
+
+.div_warning {
+    height: 30%;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.div_warning p {
+    font-family: Lato;
+    font-size: 21px;
+}
+
+.about_us {
+    background-image: url('../assets/img_about_us.svg');
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.div_info_about {
+    background-color: white;
+    border-radius: 10px;
+    width: 30%;
+    height: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 25px;
+}
+
+.div_text_info {
+    width: 100%;
+    height: 100%;
+    padding: auto;
+}
+
+.div_title_about {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 7px;
+}
+
+.title_about {
+    height: 100%;
+    align-self: center;
+    font-family: Lato;
+    font-size: 37px;
+}
+
+.img_cow_logo {
+    width: 20%;
+}
+
+.div_text_info {
+    font-family: Lato;
+    font-size: 25px;
+    text-align: justify;
+    margin-top: 15px;
+}
+
+/* Goals CSS */
+.goals {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.div_title_goals {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.div_title_goals h1 {
+    font-family: Lato;
+    font-size: 33px;
+    font-style: bold;
+    font-weight: 800;
+}
+
+.div_cards_goals {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card_food, .card_product, .card_money {
+    width: 22%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.card_food {
+    background-color: #EA9B58;
+}
+
+.card_product {
+    background-color: #7BB41C;
+}
+
+.card_money {
+    background-color: #EDCAB2;
+}
+
+.card_food h3, .card_product h3, .card_money h3 {
+    font-size: 23px;
+    font-family: Lato;
+}
+
+.card_food p, .card_product p, .card_money p {
+    font-size: 22px;
+    font-family: Lato;
+}
+
+.icon_goals {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.contact {
+    background-image: url('../assets/img_contact.svg');
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.div_title_contact {
+    width: 100%;
+    text-align: center;
+}
+
+.div_title_contact h1 {
+    font-family: Lato;
+    font-size: 27px;
+}
+
+.div_form_contact {
+    width: 28%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+    text-align: center;
+    border-radius: 20px;
+    align-self: center;
+    margin-right: 10%;
+    opacity: 100%;
+}
+
+.div_field_form {
+    width: 100%;
+    height: 8%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+}
+
+.icon_form {
+    width: 10%;
+    margin: 5px;
+}
+
+.field_form_contact {
+    width: 70%;
+    height: 80%;
+    margin: 5px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.div_textarea {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.div_textarea label {
+    font-family: Lato;
+    font-size: 15px;
+    margin: 5px;
+    width: 58%;
+}
+
+.div_textarea textarea {
+    width: 81%;
+    height: 80%;
+    resize: none;
+    margin: 0 auto;
+}
+
+.div_btn_form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 10%;
+}
+
+.div_btn_form button {
+    width: 60%;
+    background-color: #1a1a1add;
+    color: white;
+    font-family: Lato;
+    font-size: 22px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.div_btn_form button:hover {
+    background-color: #2b2929dd;
+}
+
+.rodape {
+    width: 100%;
+    height: 45vh;
+    background-color: #000000da;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.div_body_rodape {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.div_column_rodape, .div_column_rodape_img, .div_column_rodape_nav {
+    width: 25%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: center;
+}
+
+.div_column_rodape_img {
+    width: 30%;
+    padding: 10px;
+} 
+
+.div_column_rodape_nav {
+    height: 72%;
+    justify-content: space-between;
+}
+
+.div_nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+}
+
+.img_logo_rodape {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.div_column_rodape a, .div_column_rodape p, .div_column_rodape_nav a, .div_column_rodape_nav p {
+    color: white;
+    text-decoration: none;
+    font-family: Lato;
+    font-size: 16px;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.div_social_media {
+    width: 55%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+}
+
+.img_logo_social {
+    width: 80%;
+    margin: 5px auto;
+    cursor: pointer;
+}
+
+.div_copyright {
+    width: 100%;
+    text-align: center;
+    height: 10%;
+}
+
+.div_copyright p {
+    color: white;
+    font-family: Lato;
+    font-size: 13px;
 }

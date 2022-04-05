@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import '../css/Menu.css';
+import React from 'react';
+import '../css/MenuComponent.css';
 import YellowStar from '../assets/yellowstar.svg';
 import WhiteStar from '../assets/whitestar.svg';
 
@@ -13,9 +13,12 @@ function MenuComponent({ info }) {
                 <p className='txt_info_menu'>{info.name} - R$ {info.price}</p>
             </div>
             <div className='div_align_menu'>
-                <div className='div_avaliation_menu' />
-                <div className='div_btn_menu'>
-                    <button className='btn_menu'>Pedir</button>
+                <div className='div_avaliation_menu'>
+                    <img src={YellowStar} alt='Imagem de uma estrela' />
+                    <img src={YellowStar} alt='Imagem de uma estrela' />
+                    <img src={YellowStar} alt='Imagem de uma estrela' />
+                    <img src={WhiteStar} alt='Imagem de uma estrela' />
+                    <img src={WhiteStar} alt='Imagem de uma estrela' />
                 </div>
             </div>
         </div>
